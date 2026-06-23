@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS ATELIER — Architecture & Interior Design</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header-main bg-white sticky-top">
+        <!-- Top Bar -->
+        <div class="top-bar border-bottom py-2">
+            <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center">
+                <!-- Left: Call Us (Hidden on Mobile) -->
+                <div class="top-bar-left text-dark fw-medium fs-13 d-none d-md-block">
+                    Call Us : +91 8887725913
+                </div>
+
+                <!-- Right: Socials, Login, Sign Up -->
+                <div class="top-bar-right d-flex align-items-center justify-content-end w-100 w-md-auto gap-4">
+                    <!-- Socials (Hidden on Mobile) -->
+                    <div class="social-links d-none d-md-flex gap-3">
+                        <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <!-- Divider (Hidden on Mobile) -->
+                    <div class="d-none d-md-block" style="width: 1px; height: 15px; background-color: #ddd;"></div>
+
+                    <!-- Login / Sign Up -->
+                    <div class="auth-links d-flex gap-3 fs-13 fw-medium">
+                        <a href="#" class="text-dark text-decoration-none"><i class="fas fa-lock me-1"></i> Login</a>
+                        <a href="#" class="text-dark text-decoration-none"><i class="far fa-user me-1"></i> Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white px-4 px-lg-5 py-3 py-lg-4">
+            <div class="container-fluid p-0">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center p-0 m-0" href="#">
+                    <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/logo.png"
+                        alt="MS ATELIER" height="40" class="me-2">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0 shadow-none p-0 text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <i class="fas fa-bars fs-3"></i>
+                </button>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav gap-lg-4 mt-3 mt-lg-0 text-uppercase fw-bold fs-13">
+                        <li class="nav-item">
+                            <a class="nav-link active text-theme d-flex justify-content-between align-items-center"
+                                href="#">
+                                HOME
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
+                                PAGES
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
+                                WORKS
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
+                                GALLERY
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
+                                SHOP
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
+                                BLOG
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
+                                CONTACT
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Cart Icon (Desktop Only) -->
+                    <div class="d-none d-lg-block ms-4">
+                        <a href="#" class="text-dark"><i class="fas fa-shopping-cart fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Slider -->
+    <section class="hero position-relative overflow-hidden" id="heroSlider">
+        <!-- Slide 1 -->
+        <div class="hero-slide active">
+            <div class="hero-bg"
+                style="background-image: url('https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/img-slide-1.jpg');">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content container-fluid px-4 px-lg-5 text-white text-center text-lg-start">
+                <div class="row">
+                    <div class="col-lg-8 ms-lg-5 ps-lg-5">
+                        <h1 class="display-3 fw-bold lh-sm mb-2">Design Concreate</h1>
+                        <h1 class="display-4 fw-light lh-sm mb-5">Modern Building</h1>
+                        <a href="#" class="btn btn-theme rounded-0 px-4 py-2 fs-14 fw-bold text-white shadow-sm">More
+                            Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide">
+            <div class="hero-bg"
+                style="background-image: url('https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/img-slide-2.jpg');">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content container-fluid px-4 px-lg-5 text-white text-center text-lg-start">
+                <div class="row">
+                    <div class="col-lg-8 ms-lg-5 ps-lg-5">
+                        <h1 class="display-3 fw-bold lh-sm mb-2">Interior Design</h1>
+                        <h1 class="display-4 fw-light lh-sm mb-5">Excellence</h1>
+                        <a href="#" class="btn btn-theme rounded-0 px-4 py-2 fs-14 fw-bold text-white shadow-sm">More
+                            Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide">
+            <div class="hero-bg"
+                style="background-image: url('https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/img-slide-3.jpg');">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content container-fluid px-4 px-lg-5 text-white text-center text-lg-start">
+                <div class="row">
+                    <div class="col-lg-8 ms-lg-5 ps-lg-5">
+                        <h1 class="display-3 fw-bold lh-sm mb-2">Building Dreams</h1>
+                        <h1 class="display-4 fw-light lh-sm mb-5">Into Reality</h1>
+                        <a href="#" class="btn btn-theme rounded-0 px-4 py-2 fs-14 fw-bold text-white shadow-sm">More
+                            Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Arrows -->
+        <div class="hero-prev position-absolute start-0 top-50 translate-middle-y ms-4 ms-lg-5 z-3 d-none d-md-block p-3"
+            style="cursor: pointer;">
+            <i class="fas fa-angle-left text-white fs-1 hover-opacity-100 transition"></i>
+        </div>
+        <div class="hero-next position-absolute end-0 top-50 translate-middle-y me-4 me-lg-5 z-3 d-none d-md-block p-3"
+            style="cursor: pointer;">
+            <i class="fas fa-angle-right text-white fs-1 hover-opacity-100 transition"></i>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section py-5 my-5">
+        <div class="container-fluid px-4 px-lg-5 mt-4">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-5 ms-lg-5 ps-lg-5 mb-5 mb-lg-0">
+                    <div class="text-uppercase fw-bold fs-13 text-secondary mb-3 letter-spacing-1">About Us</div>
+                    <div class="theme-line mb-4"></div>
+                    <h2 class="display-5 fw-bold text-black lh-sm mb-4">We Are<br>Architecture<br>Design</h2>
+                    <p class="text-secondary fs-14 lh-lg mb-5 pe-lg-4" style="max-width: 450px;">Donec at cursus sem.
+                        Duis condimentum posuere purus, at venenatis tellus mollis. Vestibulum cursus convallis
+                        venenatis. Sed ut blandit mauris. Lorem non suscipit. Proin pretium consequat est, sit amet
+                        consectetur luctus vel. Etiam quis interdum felis, at pellentesque metus.</p>
+
+                    <div class="d-flex align-items-center mt-5">
+                        <div class="experience-number fw-bold text-black lh-1 position-relative me-3 z-1"
+                            style="font-size: 5rem; letter-spacing: -3px;">
+                            <span class="bg-gray-box position-absolute start-0 bottom-0 w-100 h-50 z-n1"
+                                style="background-color: #f1f1f1; margin-bottom: 5px;"></span>
+                            23
+                        </div>
+                        <div class="experience-text text-dark fw-medium fs-13 lh-sm pt-2">
+                            Year<br>Experience<br>Working
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content (Image Box) -->
+                <div class="col-lg-5 position-relative mt-4 mt-lg-0 ps-lg-5">
+                    <!-- Dots Background -->
+                    <div class="dots-bg position-absolute bottom-0 start-0 w-100 h-100"
+                        style="background-image: radial-gradient(#d5d5d5 1.5px, transparent 1.5px); background-size: 15px 15px; transform: translate(-30px, 30px); z-index: -1;">
+                    </div>
+
+                    <div class="about-image-box position-relative overflow-hidden shadow-sm bg-white p-0">
+                        <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/imghome1.jpg"
+                            alt="Interior Balcony" class="img-fluid w-100 object-fit-cover about-img-height">
+
+                        <!-- Gradient Overlay -->
+                        <div class="position-absolute bottom-0 start-0 w-100 h-50"
+                            style="background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);"></div>
+
+                        <!-- Image Text Overlay -->
+                        <div class="position-absolute bottom-0 start-0 p-4 p-lg-5 text-white w-100">
+                            <h3 class="fw-bold text-uppercase fs-4 lh-sm mb-3">Design<br>Interior<br>Balcony</h3>
+                            <p class="fs-10 text-uppercase fw-medium text-white-50 mb-4" style="letter-spacing: 1px;">
+                                Proin pretium consequat est, sit amet<br>consectetur luctus vel etiam quis...</p>
+                            <a href="#"
+                                class="text-white text-uppercase fs-10 fw-bold text-decoration-none letter-spacing-1">More
+                                Detail &rarr;</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
