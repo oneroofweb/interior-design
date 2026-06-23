@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -24,8 +24,15 @@
         <div class="top-bar border-bottom py-2">
             <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center">
                 <!-- Left: Call Us (Hidden on Mobile) -->
-                <div class="top-bar-left text-dark fw-medium fs-13 d-none d-md-block">
-                    Call Us : +91 8887725913
+                <div class="top-bar-left d-none d-md-flex align-items-center">
+                    <a href="tel:+918887725913"
+                        class="text-dark text-decoration-none d-inline-flex align-items-center gap-2 transition hover-theme fs-13 fw-medium text-nowrap">
+                        <div class="d-flex align-items-center justify-content-center text-theme rounded-circle bg-theme bg-opacity-10"
+                            style="width: 28px; height: 28px;">
+                            <i class="fas fa-phone" style="font-size: 12px; color: rgb(250, 247, 247);"></i>
+                        </div>
+                        +91 8887725913
+                    </a>
                 </div>
 
                 <!-- Right: Socials, Login, Sign Up -->
@@ -39,14 +46,7 @@
                         <a href="#" class="text-dark"><i class="fab fa-linkedin-in"></i></a>
                     </div>
 
-                    <!-- Divider (Hidden on Mobile) -->
-                    <div class="d-none d-md-block" style="width: 1px; height: 15px; background-color: #ddd;"></div>
 
-                    <!-- Login / Sign Up -->
-                    <div class="auth-links d-flex gap-3 fs-13 fw-medium">
-                        <a href="#" class="text-dark text-decoration-none"><i class="fas fa-lock me-1"></i> Login</a>
-                        <a href="#" class="text-dark text-decoration-none"><i class="far fa-user me-1"></i> Sign up</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -71,60 +71,45 @@
                     <ul class="navbar-nav gap-lg-4 mt-3 mt-lg-0 text-uppercase fw-bold fs-13">
                         <li class="nav-item">
                             <a class="nav-link active text-theme d-flex justify-content-between align-items-center"
-                                href="#">
+                                href="index.html">
                                 HOME
                                 <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
                                         class="fas fa-chevron-down fs-10"></i></span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
-                                PAGES
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="about.html">
+                                ABOUT
                                 <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
                                         class="fas fa-chevron-down fs-10"></i></span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
-                                WORKS
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="services.html">
+                                SERVICE
                                 <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
                                         class="fas fa-chevron-down fs-10"></i></span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
-                                GALLERY
-                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
-                                        class="fas fa-chevron-down fs-10"></i></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
-                                SHOP
-                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
-                                        class="fas fa-chevron-down fs-10"></i></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
-                                BLOG
-                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
-                                        class="fas fa-chevron-down fs-10"></i></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark d-flex justify-content-between align-items-center" href="#">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="contact.html">
                                 CONTACT
                                 <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
                                         class="fas fa-chevron-down fs-10"></i></span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="projects.html">
+                                PROJECTS
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
                     </ul>
-
-                    <!-- Cart Icon (Desktop Only) -->
-                    <div class="d-none d-lg-block ms-4">
-                        <a href="#" class="text-dark"><i class="fas fa-shopping-cart fs-5"></i></a>
-                    </div>
                 </div>
             </div>
         </nav>
@@ -251,6 +236,349 @@
                     </div>
 
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section py-5 bg-gray-box">
+        <div class="container px-4 px-lg-5 py-5">
+            <div class="text-center mb-5 pb-3">
+                <div
+                    class="text-uppercase fw-bold fs-13 text-secondary mb-3 letter-spacing-1 d-flex align-items-center justify-content-center gap-2">
+                    <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                    Our Services
+                    <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                </div>
+                <h2 class="display-5 fw-bold text-black lh-sm">What We Do</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-home fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Residential Design</h4>
+                        <p class="text-secondary fs-14 mb-4">We create beautiful, functional living spaces that reflect
+                            your personal style and enhance your daily life.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-building fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Commercial Design</h4>
+                        <p class="text-secondary fs-14 mb-4">Designing inspiring workspaces and commercial environments
+                            that boost productivity and impress clients.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-couch fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Furniture Selection</h4>
+                        <p class="text-secondary fs-14 mb-4">Curating the perfect pieces of furniture to complement your
+                            space's architecture and your lifestyle.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-ruler-combined fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Space Planning</h4>
+                        <p class="text-secondary fs-14 mb-4">Maximizing the potential of your interior with strategic
+                            layouts and optimal spatial organization.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-palette fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Color Consultation</h4>
+                        <p class="text-secondary fs-14 mb-4">Expert advice on color palettes that evoke the right mood
+                            and harmonize with your existing elements.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-lightbulb fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Custom Lighting</h4>
+                        <p class="text-secondary fs-14 mb-4">Designing custom lighting solutions to beautifully
+                            illuminate your spaces and highlight key features.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="projects-section py-5 my-5">
+        <div class="container-fluid px-4 px-lg-5 py-5">
+            <div class="text-center mb-5 pb-3">
+                <div
+                    class="text-uppercase fw-bold fs-13 text-secondary mb-3 letter-spacing-1 d-flex align-items-center justify-content-center gap-2">
+                    <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                    Our Portfolio
+                    <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                </div>
+                <h2 class="display-5 fw-bold text-black lh-sm">Featured Projects</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card position-relative overflow-hidden bg-dark">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=600&fit=crop"
+                            alt="Residential" class="img-fluid w-100 object-fit-cover" style="height: 400px;">
+                        <div
+                            class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <span
+                                class="text-theme fs-12 fw-bold text-uppercase letter-spacing-1 mb-1">Residential</span>
+                            <h4 class="text-white fw-bold mb-0">Modern Living Room</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card position-relative overflow-hidden bg-dark">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=600&fit=crop"
+                            alt="Commercial" class="img-fluid w-100 object-fit-cover" style="height: 400px;">
+                        <div
+                            class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <span
+                                class="text-theme fs-12 fw-bold text-uppercase letter-spacing-1 mb-1">Commercial</span>
+                            <h4 class="text-white fw-bold mb-0">Luxury Office Space</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card position-relative overflow-hidden bg-dark">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=600&fit=crop"
+                            alt="Architecture" class="img-fluid w-100 object-fit-cover" style="height: 400px;">
+                        <div
+                            class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <span
+                                class="text-theme fs-12 fw-bold text-uppercase letter-spacing-1 mb-1">Architecture</span>
+                            <h4 class="text-white fw-bold mb-0">Minimalist Villa</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card position-relative overflow-hidden bg-dark">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=600&fit=crop"
+                            alt="Interior" class="img-fluid w-100 object-fit-cover" style="height: 400px;">
+                        <div
+                            class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <span class="text-theme fs-12 fw-bold text-uppercase letter-spacing-1 mb-1">Interior</span>
+                            <h4 class="text-white fw-bold mb-0">Contemporary Kitchen</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card position-relative overflow-hidden bg-dark">
+                        <img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=600&h=600&fit=crop"
+                            alt="Residential" class="img-fluid w-100 object-fit-cover" style="height: 400px;">
+                        <div
+                            class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <span
+                                class="text-theme fs-12 fw-bold text-uppercase letter-spacing-1 mb-1">Residential</span>
+                            <h4 class="text-white fw-bold mb-0">Elegant Bedroom</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card position-relative overflow-hidden bg-dark">
+                        <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&h=600&fit=crop"
+                            alt="Renovation" class="img-fluid w-100 object-fit-cover" style="height: 400px;">
+                        <div
+                            class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <span
+                                class="text-theme fs-12 fw-bold text-uppercase letter-spacing-1 mb-1">Renovation</span>
+                            <h4 class="text-white fw-bold mb-0">Urban Loft Setup</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#"
+                    class="btn btn-theme text-uppercase fw-bold letter-spacing-1 px-4 py-3 text-white border-0 transition hover-opacity-100">View
+                    All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Our Vision Section -->
+    <section class="vision-section py-5 my-5 bg-white">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row align-items-center">
+                <!-- Vision Text Content -->
+                <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0">
+                    <div
+                        class="text-uppercase fw-bold fs-13 text-secondary mb-3 letter-spacing-1 d-flex align-items-center gap-2">
+                        <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                        Our Philosophy
+                    </div>
+                    <h2 class="display-5 fw-bold text-black lh-sm mb-4">About Our Vision</h2>
+                    <p class="text-secondary fs-14 lh-lg mb-4">At MS Atelier, our vision is to transform everyday spaces
+                        into extraordinary experiences. We believe that architecture and interior design have the
+                        profound ability to influence how we live, work, and interact.</p>
+
+                    <ul class="list-unstyled mb-5">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-theme fs-5 me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-1">Innovative Design Solutions</h5>
+                                <p class="text-secondary fs-14 mb-0">Pushing the boundaries of creativity to deliver
+                                    unique concepts.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-theme fs-5 me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-1">Sustainable Architecture</h5>
+                                <p class="text-secondary fs-14 mb-0">Committed to eco-friendly practices and
+                                    long-lasting materials.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fas fa-check-circle text-theme fs-5 me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-1">Client-Centric Approach</h5>
+                                <p class="text-secondary fs-14 mb-0">Your dream is our blueprint; we build around your
+                                    lifestyle.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="#"
+                        class="btn btn-dark text-uppercase fw-bold letter-spacing-1 px-4 py-3 rounded-0 transition hover-opacity-100">Discover
+                        More</a>
+                </div>
+
+                <!-- Vision Image Box -->
+                <div class="col-lg-6 position-relative ps-lg-5 mt-5 mt-lg-0">
+                    <div class="position-relative overflow-hidden shadow-sm bg-white p-0">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
+                            alt="Our Vision" class="img-fluid w-100 object-fit-cover vision-img-height">
+
+                        <!-- Floating Satisfaction Badge -->
+                        <div class="position-absolute bottom-0 start-0 bg-theme text-white p-4 p-lg-5 d-flex align-items-center gap-3 w-100 w-md-auto"
+                            style="max-width: 80%;">
+                            <i class="fa-solid fa-award" style="font-size: 48px !important;"></i>
+                            <div>
+                                <h3 class="fw-bold mb-0 fs-1">100%</h3>
+                                <p class="text-white-50 text-uppercase fw-bold fs-13 mb-0 letter-spacing-1">
+                                    Satisfaction<br>Guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact Section -->
+    <section class="map-section bg-light">
+        <div class="container-fluid p-0">
+            <div class="row g-0 flex-column-reverse flex-lg-row">
+                <!-- Contact Info Box -->
+                <div class="col-lg-4 bg-theme text-white p-5 d-flex flex-column justify-content-center">
+                    <div class="p-lg-4">
+                        <div
+                            class="text-uppercase fw-bold fs-13 text-white-50 mb-3 letter-spacing-1 d-flex align-items-center gap-2">
+                            <div style="width: 20px; height: 1px; background-color: rgba(255,255,255,0.5);"></div>
+                            Get In Touch
+                        </div>
+                        <h2 class="display-6 fw-bold mb-5">Contact Us</h2>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-box-small bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-4"
+                                style="width: 50px; height: 50px;">
+                                <i class="fas fa-map-marker-alt fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-2">Our Location</h5>
+                                <p class="text-white-50 fs-14 mb-0 lh-lg">3, Mayur Vihar, A Block,<br>Faridi Nagar,
+                                    226015</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-box-small bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-4"
+                                style="width: 50px; height: 50px;">
+                                <i class="fas fa-phone fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-2">Call Us Directly</h5>
+                                <p class="text-white-50 fs-14 mb-0"><a href="tel:+918887725913"
+                                        class="text-white-50 text-decoration-none hover-text-white transition">+91
+                                        8887725913</a></p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <div class="icon-box-small bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-4"
+                                style="width: 50px; height: 50px;">
+                                <i class="fas fa-envelope fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-2">Email Address</h5>
+                                <p class="text-white-50 fs-14 mb-0"><a href="mailto:info@msatelier.com"
+                                        class="text-white-50 text-decoration-none hover-text-white transition">info@msatelier.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="col-lg-8">
+                    <iframe src="https://www.google.com/maps?q=Mayur+Vihar,+Faridi+Nagar,+Lucknow,+226015&output=embed"
+                        width="100%" height="100%" style="border:0; min-height: 500px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
