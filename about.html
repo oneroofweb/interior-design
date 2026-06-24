@@ -1,190 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About MS ATELIER — Learn about our architecture and interior design studio based in Lucknow.">
     <title>About Us — MS ATELIER</title>
-    <link rel="icon" href="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/1.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Top Bar -->
-<div class="subnav">
-    <div class="m-5-hor d-flex justify-content-between align-items-center">
-        <div><span><i class="fa fa-phone"></i> Call Us : +91 8887725913</span></div>
-        <div class="social-icons-subnav">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </div>
-</div>
+    <!-- Header / Navbar -->
+    <header class="header-main bg-white sticky-top">
+        <!-- Top Bar -->
+        <div class="top-bar border-bottom py-2">
+            <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center">
+                <!-- Left: Call Us (Hidden on Mobile) -->
+                <div class="top-bar-left d-none d-md-flex align-items-center">
+                    <a href="tel:+918887725913"
+                        class="text-dark text-decoration-none d-inline-flex align-items-center gap-2 transition hover-theme fs-13 fw-medium text-nowrap">
+                        <div class="d-flex align-items-center justify-content-center text-theme rounded-circle bg-theme bg-opacity-10"
+                            style="width: 28px; height: 28px;">
+                            <i class="fas fa-phone" style="font-size: 12px; color: rgb(250, 247, 247);"></i>
+                        </div>
+                        +91 8887725913
+                    </a>
+                </div>
 
-<!-- Header -->
-<header class="white">
-    <div class="navbar-default-white">
-        <div class="m-5-hor d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="index.html">
-                <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/logo.png" alt="MS ATELIER" class="black" height="24">
-                <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/logo-white.png" alt="MS ATELIER" class="white" height="24">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-right">
-                <a href="contact.html"><i class="fa fa-envelope"></i></a>
-                <a href="tel:+918887725913"><i class="fa fa-phone"></i></a>
-            </div>
-            <button class="navbar-toggler" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-        </div>
-    </div>
-</header>
-
-<!-- Sub Header -->
-<div id="subheader" style="background-image: url('https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/bg2.jpg');">
-    <h1>About Us</h1>
-    <div class="breadcrumb-nav">
-        <a href="index.html">Home</a> <span> / About Us</span>
-    </div>
-</div>
-
-<!-- About Content -->
-<section aria-label="about">
-    <div class="container-fluid m-5-hor">
-        <div class="row align-items-center">
-            <div class="col-md-6 col-12 onStep">
-                <h2 class="heading">Who We Are</h2>
-                <h3 class="headingcontent">MS ATELIER<br>Architecture &<br>Design Studio</h3>
-                <p class="content">MS ATELIER is a leading architecture and interior design firm located in Mayur Vihar, Lucknow. With over 15 years of experience, we have established ourselves as a trusted name in the design industry. Our team of skilled architects and designers work collaboratively to bring your vision to life, creating spaces that are both functional and beautiful.</p>
-                <p class="content">We believe that great design has the power to transform lives. Whether it's a cozy home, a dynamic office space, or a grand commercial project, we approach each project with the same passion and dedication to excellence.</p>
-                <div class="year">
-                    <div class="heading" style="font-size: 80px; color: #000; letter-spacing: -2px;">15</div>
-                    <div class="subheading dd4425">Year<br>Experience<br>Working</div>
+                <!-- Right: Socials, Login, Sign Up -->
+                <div class="top-bar-right d-flex align-items-center justify-content-end w-100 w-md-auto gap-4">
+                    <!-- Socials (Hidden on Mobile) -->
+                    <div class="social-links d-none d-md-flex gap-3">
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-solid fa-globe"></i></a>
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-5 col-12 offset-md-1 onStep">
-                <div class="hovereffect-color">
-                    <img class="imgmain" alt="MS ATELIER Studio" src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/imghome1.jpg">
-                    <div class="overlay start-align">
-                        <div>
-                            <h3>Our<br>Design<br>Philosophy</h3>
-                            <p>We blend innovation with tradition to create spaces that inspire and endure.</p>
-                            <a class="shin" href="projects.html">View Projects &rarr;</a>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white px-4 px-lg-5 py-3 py-lg-4">
+            <div class="container-fluid p-0">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center p-0 m-0" href="index.html">
+                    <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/logo.png"
+                        alt="MS ATELIER" height="40" class="me-2">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0 shadow-none p-0 text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <i class="fas fa-bars fs-3"></i>
+                </button>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav gap-lg-4 mt-3 mt-lg-0 text-uppercase fw-bold fs-13">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="index.html">
+                                HOME
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-theme d-flex justify-content-between align-items-center"
+                                href="about.html">
+                                ABOUT
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="services.html">
+                                SERVICE
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="projects.html">
+                                PROJECTS
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="contact.html">
+                                CONTACT
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Page Hero Image -->
+    <section class="about-hero p-0 m-0">
+        <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/img-about.jpg" alt="About Us Team" class="img-fluid about-hero-img">
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content py-5 my-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row pt-4 justify-content-center">
+                <!-- Left Column -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="text-uppercase fw-bold fs-13 text-secondary mb-3 letter-spacing-1">About Us</div>
+                    <div class="theme-line mb-4"></div>
+                    <h2 class="display-6 fw-bold text-black lh-sm" style="max-width: 350px;">We Built Quality<br>Interior of Design</h2>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-6 ps-lg-4">
+                    <p class="text-secondary fs-14 lh-lg mb-4">Donec posuere bibendum metus. Quisque gravida luctus volutpat mauris interdum lectus in dapibus molestie quam felis sollicitudin amet tempus velit lectus nec lorem. Nullam vel mollis neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim dui. Cum sociis natoque penatibus et magnis dis parturient montes ridiculus mus.</p>
+                    <p class="text-secondary fs-14 lh-lg mb-0">Vestibulum cursus convallis venenatis. Sed ut blandit mauris. Lorem non suscipit. Proin pretium consequat est, sit amet consectetur luctus vel. Etiam quis interdum felis, at pellentesque metus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Counters -->
+    <section class="counters-section py-5 bg-dark position-relative"
+        style="background-image: url('https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/bg1-1.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+        <div class="container-fluid px-4 px-lg-5 py-5 position-relative z-1">
+            <div class="row text-center text-white g-5">
+                <div class="col-md-6 col-lg-3">
+                    <h2 class="display-3 fw-bold text-theme mb-2">250</h2>
+                    <p class="text-uppercase fw-bold fs-13 letter-spacing-1 mb-0">Projects Completed</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h2 class="display-3 fw-bold text-theme mb-2">23</h2>
+                    <p class="text-uppercase fw-bold fs-13 letter-spacing-1 mb-0">Years Experience</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h2 class="display-3 fw-bold text-theme mb-2">180</h2>
+                    <p class="text-uppercase fw-bold fs-13 letter-spacing-1 mb-0">Happy Clients</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h2 class="display-3 fw-bold text-theme mb-2">25</h2>
+                    <p class="text-uppercase fw-bold fs-13 letter-spacing-1 mb-0">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Our Vision Section -->
+    <section class="vision-section py-5 my-5 bg-white">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row align-items-center">
+                <!-- Vision Text Content -->
+                <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0">
+                    <div
+                        class="text-uppercase fw-bold fs-13 text-secondary mb-3 letter-spacing-1 d-flex align-items-center gap-2">
+                        <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                        Our Philosophy
+                    </div>
+                    <h2 class="display-5 fw-bold text-black lh-sm mb-4">About Our Vision</h2>
+                    <p class="text-secondary fs-14 lh-lg mb-4">At MS Atelier, our mission is to create architectural
+                        designs that blend innovation with sustainability. We envision a world where every building
+                        tells a story, where form meets function in perfect harmony.</p>
+
+                    <ul class="list-unstyled mb-5">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-theme fs-5 me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-1">Innovative Design Solutions</h5>
+                                <p class="text-secondary fs-14 mb-0">Pushing the boundaries of creativity to deliver
+                                    unique concepts.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle text-theme fs-5 me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-1">Sustainable Architecture</h5>
+                                <p class="text-secondary fs-14 mb-0">Committed to eco-friendly practices and
+                                    long-lasting materials.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fas fa-check-circle text-theme fs-5 me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold fs-6 mb-1">Client-Centric Approach</h5>
+                                <p class="text-secondary fs-14 mb-0">Your dream is our blueprint; we build around your
+                                    lifestyle.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Vision Image Box -->
+                <div class="col-lg-6 position-relative ps-lg-5 mt-5 mt-lg-0">
+                    <div class="position-relative overflow-hidden shadow-sm bg-white p-0">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
+                            alt="Our Vision" class="img-fluid w-100 object-fit-cover vision-img-height">
+
+                        <!-- Floating Satisfaction Badge -->
+                        <div class="position-absolute bottom-0 start-0 bg-theme text-white p-4 p-lg-5 d-flex align-items-center gap-3 w-100 w-md-auto"
+                            style="max-width: 80%;">
+                            <i class="fa-solid fa-award" style="font-size: 48px !important;"></i>
+                            <div>
+                                <h3 class="fw-bold mb-0 fs-1">100%</h3>
+                                <p class="text-white-50 text-uppercase fw-bold fs-13 mb-0 letter-spacing-1">
+                                    Satisfaction<br>Guarantee</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Counter Section -->
-<section class="counter-section" style="background-image: url('https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/bg1-1.jpg');">
-    <div class="container-fluid m-5-hor">
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-12 onStep">
-                <div class="counter-box">
-                    <h2 class="counter-number" data-count="250">0</h2>
-                    <p>Projects Completed</p>
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-4 fs-4 text-theme">MS ATELIER</h3>
+                    <p class="text-white-50 fs-14 lh-lg mb-4">We are a premium architecture and interior design firm
+                        dedicated to creating spaces that inspire and elevate everyday life.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="javascript:void(0)"
+                            class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition hover-bg-theme text-decoration-none"
+                            style="width: 36px; height: 36px;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"
+                            class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition hover-bg-theme text-decoration-none"
+                            style="width: 36px; height: 36px;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)"
+                            class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition hover-bg-theme text-decoration-none"
+                            style="width: 36px; height: 36px;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)"
+                            class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition hover-bg-theme text-decoration-none"
+                            style="width: 36px; height: 36px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-12 onStep">
-                <div class="counter-box">
-                    <h2 class="counter-number" data-count="15">0</h2>
-                    <p>Years Experience</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-12 onStep">
-                <div class="counter-box">
-                    <h2 class="counter-number" data-count="180">0</h2>
-                    <p>Happy Clients</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-12 onStep">
-                <div class="counter-box">
-                    <h2 class="counter-number" data-count="25">0</h2>
-                    <p>Awards Won</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Vision Section -->
-<section class="tagline" aria-label="vision">
-    <div class="container-fluid m-5-hor">
-        <div class="row">
-            <div class="col-md-12 onStep">
-                <div class="wrapheading">
-                    <h1>OUR MISSION & VISION</h1>
-                </div>
-                <p class="tagline">At MS ATELIER, our mission is to create architectural designs that blend innovation with sustainability. We envision a world where every building tells a story, where form meets function in perfect harmony. Our commitment to quality craftsmanship and client satisfaction drives everything we do.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container-fluid m-5-hor">
-        <div class="footer-widgets">
-            <div class="row align-items-center">
-                <div class="col-md-8 col-sm-12 col-12">
-                    <ul class="list-menu">
-                        <li><a href="about.html">TERMS</a></li>
-                        <li><a href="contact.html">CONTRACT</a></li>
-                        <li>
-                            <ul>
-                                <li><a class="active" href="#">ENG</a></li>
-                                <li><a href="#">FRA</a></li>
-                                <li><a href="#">GER</a></li>
-                            </ul>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 offset-lg-2">
+                    <h5 class="fw-bold mb-4 fs-6">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Home</a>
+                        </li>
+                        <li class="mb-2"><a href="about.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">About
+                                Us</a></li>
+                        <li class="mb-2"><a href="services.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="projects.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Projects</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-sm-12 col-12">
-                    <div class="search-container text-end">
-                        <form>
-                            <input class="s-input-home" type="search" placeholder="Search…" name="s">
-                            <button class="btn-s-input" type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid m-5-hor">
-        <div class="bottom-footer">
-            <div class="row align-items-center">
-                <div class="col-sm-6 copyright"><span>Copyright &copy; MS ATELIER 2025 - All rights reserved.</span></div>
-                <div class="col-sm-6">
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-tumblr"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
-<div id="totop"><i class="fa fa-chevron-up"></i></div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-4 fs-6">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="privacy-policy.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Privacy
+                                Policy</a></li>
+                        <li class="mb-2"><a href="terms.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Terms &
+                                Conditions</a></li>
+                        <li class="mb-2"><a href="cookie-policy.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Cookie
+                                Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-25 my-4">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-white-50 fs-13 mb-0">&copy; 2026 MS ATELIER. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <p class="text-white-50 fs-13 mb-0">Designed By <span class="text-theme fw-bold">Digital
+                            Bhaiya</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
 </body>
+
 </html>

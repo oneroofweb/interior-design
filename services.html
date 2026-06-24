@@ -1,175 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Services by MS ATELIER — Architecture, Interior Design, Construction and more.">
     <title>Our Services — MS ATELIER</title>
-    <link rel="icon" href="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/1.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Top Bar -->
-<div class="subnav">
-    <div class="m-5-hor d-flex justify-content-between align-items-center">
-        <div><span><i class="fa fa-phone"></i> Call Us : +91 8887725913</span></div>
-        <div class="social-icons-subnav">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </div>
-</div>
+    <!-- Header / Navbar -->
+    <header class="header-main bg-white sticky-top">
+        <!-- Top Bar -->
+        <div class="top-bar border-bottom py-2">
+            <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center">
+                <!-- Left: Call Us (Hidden on Mobile) -->
+                <div class="top-bar-left d-none d-md-flex align-items-center">
+                    <a href="tel:+918887725913"
+                        class="text-dark text-decoration-none d-inline-flex align-items-center gap-2 transition hover-theme fs-13 fw-medium text-nowrap">
+                        <div class="d-flex align-items-center justify-content-center text-theme rounded-circle bg-theme bg-opacity-10"
+                            style="width: 28px; height: 28px;">
+                            <i class="fas fa-phone" style="font-size: 12px; color: rgb(250, 247, 247);"></i>
+                        </div>
+                        +91 8887725913
+                    </a>
+                </div>
 
-<!-- Header -->
-<header class="white">
-    <div class="navbar-default-white">
-        <div class="m-5-hor d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="index.html">
-                <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/logo.png" alt="MS ATELIER" class="black" height="24">
-                <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/logo-white.png" alt="MS ATELIER" class="white" height="24">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="active"><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-right">
-                <a href="contact.html"><i class="fa fa-envelope"></i></a>
-                <a href="tel:+918887725913"><i class="fa fa-phone"></i></a>
-            </div>
-            <button class="navbar-toggler" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-        </div>
-    </div>
-</header>
-
-<!-- Sub Header -->
-<div id="subheader" style="background-image: url('https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/bg3.jpg');">
-    <h1>Our Services</h1>
-    <div class="breadcrumb-nav">
-        <a href="index.html">Home</a> <span> / Services</span>
-    </div>
-</div>
-
-<!-- Services Grid -->
-<section aria-label="services">
-    <div class="container-fluid m-5-hor">
-        <div class="row">
-            <div class="col-md-12 text-center mb-5 onStep">
-                <h2 class="heading">What We Do</h2>
-                <h3 class="headingcontent">Our Services</h3>
-                <p class="content" style="max-width: 700px; margin: 0 auto;">We provide a comprehensive range of architecture and design services to bring your vision to life, from initial concept to final execution.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 onStep">
-                <div class="service-box">
-                    <span class="icon"><i class="fa fa-drafting-compass"></i></span>
-                    <h4>Architecture Design</h4>
-                    <p>Complete architectural design services for residential, commercial, and institutional projects. From concept sketches to detailed construction drawings.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 onStep">
-                <div class="service-box">
-                    <span class="icon"><i class="fa fa-couch"></i></span>
-                    <h4>Interior Design</h4>
-                    <p>Transform your interior spaces with our expert design services. We create functional, beautiful interiors that reflect your personality and lifestyle.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 onStep">
-                <div class="service-box">
-                    <span class="icon"><i class="fa fa-building"></i></span>
-                    <h4>Construction</h4>
-                    <p>End-to-end construction management services ensuring quality, timeliness, and cost-effectiveness for your building projects.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 onStep">
-                <div class="service-box">
-                    <span class="icon"><i class="fa fa-ruler-combined"></i></span>
-                    <h4>Space Planning</h4>
-                    <p>Optimize your available space with our intelligent planning solutions. We maximize functionality while maintaining aesthetic appeal.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 onStep">
-                <div class="service-box">
-                    <span class="icon"><i class="fa fa-palette"></i></span>
-                    <h4>Renovation</h4>
-                    <p>Breathe new life into existing spaces with our renovation expertise. We modernize and upgrade while preserving the character you love.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 onStep">
-                <div class="service-box">
-                    <span class="icon"><i class="fa fa-lightbulb"></i></span>
-                    <h4>Consulting</h4>
-                    <p>Expert architecture and design consulting to help you make informed decisions about your project. We guide you at every step.</p>
+                <!-- Right: Socials, Login, Sign Up -->
+                <div class="top-bar-right d-flex align-items-center justify-content-end w-100 w-md-auto gap-4">
+                    <!-- Socials (Hidden on Mobile) -->
+                    <div class="social-links d-none d-md-flex gap-3">
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-solid fa-globe"></i></a>
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)" class="text-dark"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- CTA Section -->
-<section class="counter-section" style="background-image: url('https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/bg1-1.jpg');">
-    <div class="container-fluid m-5-hor text-center" style="position: relative; z-index: 1;">
-        <div class="onStep">
-            <h2 class="heading" style="color: rgba(255,255,255,0.7);">Ready to Start?</h2>
-            <h3 class="headingcontent" style="color: #fff;">Let's Build Something<br>Amazing Together</h3>
-            <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 30px;">Whether you have a clear vision or just a spark of an idea, our team is ready to help you create something extraordinary.</p>
-            <a href="contact.html" class="btn-content">Contact Us &rarr;<span class="shine"></span></a>
-        </div>
-    </div>
-</section>
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white px-4 px-lg-5 py-3 py-lg-4">
+            <div class="container-fluid p-0">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center p-0 m-0" href="index.html">
+                    <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/logo.png"
+                        alt="MS ATELIER" height="40" class="me-2">
+                </a>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container-fluid m-5-hor">
-        <div class="footer-widgets">
-            <div class="row align-items-center">
-                <div class="col-md-8 col-sm-12 col-12">
-                    <ul class="list-menu">
-                        <li><a href="about.html">TERMS</a></li>
-                        <li><a href="contact.html">CONTRACT</a></li>
-                        <li><ul><li><a class="active" href="#">ENG</a></li><li><a href="#">FRA</a></li><li><a href="#">GER</a></li></ul></li>
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0 shadow-none p-0 text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <i class="fas fa-bars fs-3"></i>
+                </button>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav gap-lg-4 mt-3 mt-lg-0 text-uppercase fw-bold fs-13">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="index.html">
+                                HOME
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="about.html">
+                                ABOUT
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-theme d-flex justify-content-between align-items-center"
+                                href="services.html">
+                                SERVICE
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="projects.html">
+                                PROJECTS
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark d-flex justify-content-between align-items-center"
+                                href="contact.html">
+                                CONTACT
+                                <span class="d-lg-none bg-secondary bg-opacity-25 px-2 py-1 rounded-1 text-secondary"><i
+                                        class="fas fa-chevron-down fs-10"></i></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-sm-12 col-12">
-                    <div class="search-container text-end">
-                        <form><input class="s-input-home" type="search" placeholder="Search…" name="s"><button class="btn-s-input" type="submit"><i class="fa fa-search"></i></button></form>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid m-5-hor">
-        <div class="bottom-footer">
-            <div class="row align-items-center">
-                <div class="col-sm-6 copyright"><span>Copyright &copy; MS ATELIER 2025 - All rights reserved.</span></div>
-                <div class="col-sm-6">
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-tumblr"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+        </nav>
+    </header>
 
-<div id="totop"><i class="fa fa-chevron-up"></i></div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
+    <!-- Services Hero Image -->
+    <section class="about-hero p-0 m-0 position-relative">
+        <img src="https://shtheme.com/demosd/concreatewp/wp-content/uploads/2022/08/img-about.jpg" alt="Our Services"
+            class="img-fluid about-hero-img" style="object-position: center bottom;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.5);">
+            <h1 class="display-3 fw-bold text-white mb-2">Our Services</h1>
+            <div class="text-white-50 text-uppercase letter-spacing-1 fs-14 fw-medium">
+                <a href="index.html" class="text-white text-decoration-none">Home</a> <span class="mx-2">/</span> <span
+                    class="text-theme">Services</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section py-5 my-5">
+        <div class="container px-4 px-lg-5 py-2">
+            <div class="text-center mb-5 pb-3">
+                <div
+                    class="text-uppercase fw-bold fs-13 text-secondary mb-3 letter-spacing-1 d-flex align-items-center justify-content-center gap-2">
+                    <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                    What We Do
+                    <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                </div>
+                <h2 class="display-5 fw-bold text-black lh-sm">Comprehensive Design<br>Solutions</h2>
+                <p class="text-secondary fs-14 lh-lg mt-4 mx-auto" style="max-width: 700px;">We provide a comprehensive
+                    range of architecture and design services to bring your vision to life, from initial concept to
+                    final execution.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-gray-box p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-home fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Residential Design</h4>
+                        <p class="text-secondary fs-14 mb-4">We create beautiful, functional living spaces that reflect
+                            your personal style and enhance your daily life.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-gray-box p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-building fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Commercial Design</h4>
+                        <p class="text-secondary fs-14 mb-4">Designing inspiring workspaces and commercial environments
+                            that boost productivity and impress clients.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-gray-box p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-couch fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Furniture Selection</h4>
+                        <p class="text-secondary fs-14 mb-4">Curating the perfect pieces of furniture to complement your
+                            space's architecture and your lifestyle.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-gray-box p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-ruler-combined fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Space Planning</h4>
+                        <p class="text-secondary fs-14 mb-4">Maximizing the potential of your interior with strategic
+                            layouts and optimal spatial organization.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-gray-box p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-palette fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Color Consultation</h4>
+                        <p class="text-secondary fs-14 mb-4">Expert advice on color palettes that evoke the right mood
+                            and harmonize with your existing elements.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-gray-box p-5 shadow-sm text-center h-100">
+                        <div class="icon-box text-theme mb-4 d-inline-flex align-items-center justify-content-center"
+                            style="width: 70px; height: 70px; border-radius: 50%; background-color: rgba(227, 74, 56, 0.1);">
+                            <i class="fas fa-lightbulb fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5">Custom Lighting</h4>
+                        <p class="text-secondary fs-14 mb-4">Designing custom lighting solutions to beautifully
+                            illuminate your spaces and highlight key features.</p>
+                        <a href="https://wa.me/918887725913" target="_blank"
+                            class="text-theme fs-12 fw-bold text-uppercase text-decoration-none letter-spacing-1 hover-opacity-100">Contact
+                            Now <i class="fab fa-whatsapp ms-1 fs-14"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section class="work-process py-5 mb-5 bg-white">
+        <div class="container-fluid px-4 px-lg-5 py-5 text-center">
+            <div
+                class="text-uppercase fw-bold fs-13 text-secondary mb-3 letter-spacing-1 d-flex align-items-center justify-content-center gap-2">
+                <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+                How It Works
+                <div style="width: 20px; height: 1px; background-color: var(--theme-clr);"></div>
+            </div>
+            <h2 class="display-5 fw-bold text-black lh-sm mb-5">Our Work Process</h2>
+
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <div class="process-step">
+                        <h1 class="display-1 fw-bold text-secondary opacity-25 mb-0"
+                            style="margin-bottom: -30px !important;">01</h1>
+                        <h4 class="fw-bold text-black mb-3 position-relative z-1">Concept</h4>
+                        <p class="text-secondary fs-14">We start by understanding your needs, style, and goals to build a
+                            strong foundation for the project.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-step">
+                        <h1 class="display-1 fw-bold text-secondary opacity-25 mb-0"
+                            style="margin-bottom: -30px !important;">02</h1>
+                        <h4 class="fw-bold text-black mb-3 position-relative z-1">Design</h4>
+                        <p class="text-secondary fs-14">Our team creates detailed plans, 3D renderings, and material
+                            selections for your approval.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-step">
+                        <h1 class="display-1 fw-bold text-secondary opacity-25 mb-0"
+                            style="margin-bottom: -30px !important;">03</h1>
+                        <h4 class="fw-bold text-black mb-3 position-relative z-1">Execute</h4>
+                        <p class="text-secondary fs-14">We manage the construction and installation phase to ensure
+                            flawless execution of the design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-4 fs-4 text-theme">MS ATELIER</h3>
+                    <p class="text-white-50 fs-14 lh-lg mb-4">We are a premium architecture and interior design firm
+                        dedicated to creating spaces that inspire and elevate everyday life.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="javascript:void(0)"
+                            class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition hover-bg-theme text-decoration-none"
+                            style="width: 36px; height: 36px;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"
+                            class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition hover-bg-theme text-decoration-none"
+                            style="width: 36px; height: 36px;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)"
+                            class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition hover-bg-theme text-decoration-none"
+                            style="width: 36px; height: 36px;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)"
+                            class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition hover-bg-theme text-decoration-none"
+                            style="width: 36px; height: 36px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 offset-lg-2">
+                    <h5 class="fw-bold mb-4 fs-6">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Home</a>
+                        </li>
+                        <li class="mb-2"><a href="about.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">About
+                                Us</a></li>
+                        <li class="mb-2"><a href="services.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="projects.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Projects</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-4 fs-6">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="privacy-policy.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Privacy
+                                Policy</a></li>
+                        <li class="mb-2"><a href="terms.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Terms &
+                                Conditions</a></li>
+                        <li class="mb-2"><a href="cookie-policy.html"
+                                class="text-white-50 text-decoration-none hover-text-white transition fs-14">Cookie
+                                Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-25 my-4">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-white-50 fs-13 mb-0">&copy; 2026 MS ATELIER. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <p class="text-white-50 fs-13 mb-0">Designed By <span class="text-theme fw-bold">Digital
+                            Bhaiya</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
 </body>
+
 </html>

@@ -40,8 +40,7 @@ body {
 
 /* Header & Navbar */
 .header-main {
-    position: relative;
-    z-index: 1000;
+    z-index: 1030;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Slight shadow for separation */
 }
 
@@ -255,5 +254,18 @@ body {
     .auth-links {
         justify-content: flex-end;
         width: 100%;
+    }
+}
+
+/* About Page Hero */
+.about-hero-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 992px) {
+    .about-hero-img {
+        height: 530px;
     }
 }
